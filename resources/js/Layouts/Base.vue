@@ -66,7 +66,7 @@ import {Link} from '@inertiajs/inertia-vue3';
                     <a class="cursor-pointer z-50" href="https://xeniaweb.ch/" target="_blank" title="Xenia WEB">
                         <span class="sr-only">Oksana Burki</span>
                         <Link href="/">
-                            <AppLogoXeniaWeb color-web="blue-950" class="w-auto h-10 group-hover:fill-blue-950/50"/>
+                            <AppLogoXeniaWeb color-web="blue-950" class="w-auto h-20 sm:h-10 group-hover:fill-blue-950/50"/>
                         </Link>
                     </a>
                 </div>
