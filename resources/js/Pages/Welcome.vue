@@ -1,5 +1,6 @@
 <script setup>
 import AppLogoXeniaWeb from '@/Components/AppLogoXeniaWeb.vue';
+import BreezeNavLink from '@/Components/NavLink.vue';
 import {Head, Link} from '@inertiajs/inertia-vue3';
 
 defineProps({
@@ -22,20 +23,29 @@ defineProps({
                     </Link>
                 </div>
                 <div class="flex items-center">
-                    <div class="shrink-0 flex items-center px-3">
+                    <BreezeNavLink :href="route('web-works.index')" :active="route().current('web-works/index')" class="mr-6 ">
+                        <span class=" text-[burlywood] hover:text-yellow-200">My Works</span>
+                    </BreezeNavLink>
+                    <BreezeNavLink :href="route('page.about')" :active="route().current('page.about')" class="mr-6 text-[burlywood] ">
+                        <span class=" text-[burlywood] hover:text-yellow-200">About me</span>
+                    </BreezeNavLink>
+                    <BreezeNavLink :href="route('page.contacts')" :active="route().current('page.contacts')" class="mr-6 text-[burlywood]">
+                        <span class=" text-[burlywood] hover:text-yellow-200">Contacts</span>
+                    </BreezeNavLink>
+<!--                    <div class="shrink-0 flex items-center px-3">-->
 
-                        <Link :href="route('login')"
-                              class="text-sm text-stone-400 hover:text-stone-300 underline pr-2">
-                            Log in
-                        </Link>
-                    </div>
-                    <div class="shrink-0 flex items-center px-3">
+<!--                        <Link :href="route('login')"-->
+<!--                              class="text-sm text-stone-400 hover:text-stone-300 underline pr-2">-->
+<!--                            Log in-->
+<!--                        </Link>-->
+<!--                    </div>-->
+<!--                    <div class="shrink-0 flex items-center px-3">-->
 
-                        <Link v-if="canRegister" :href="route('register')"
-                              class="text-sm text-stone-400 hover:text-stone-300 underline pr-2">
-                            Register
-                        </Link>
-                    </div>
+<!--                        <Link v-if="canRegister" :href="route('register')"-->
+<!--                              class="text-sm text-stone-400 hover:text-stone-300 underline pr-2">-->
+<!--                            Register-->
+<!--                        </Link>-->
+<!--                    </div>-->
                 </div>
             </nav>
             <div class=" flex justify-center items-start  xl:items-center min-h-hero">

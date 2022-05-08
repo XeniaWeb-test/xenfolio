@@ -25,8 +25,8 @@ Route::get('/', function () {
 });
 
 Route::resource('/web-works', App\Http\Controllers\WebWorkController::class);
-Route::inertia('/about', 'About');
-Route::inertia('/contacts', 'Contacts');
+Route::inertia('/about', 'About')->name('page.about');
+Route::inertia('/contacts', 'Contacts')->name('page.contacts');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

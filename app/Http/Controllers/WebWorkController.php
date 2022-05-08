@@ -9,11 +9,11 @@ class WebWorkController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Inertia\Response|\Inertia\ResponseFactory
      */
     public function index()
     {
-        return inertia('WebWork');
+        return inertia('WebWork', []);
     }
 
     /**
