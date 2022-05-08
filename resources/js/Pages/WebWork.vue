@@ -9,7 +9,7 @@ import { Head } from '@inertiajs/inertia-vue3';
 
     <BaseLayout>
         <template #header>
-            <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            <h2 class="font-semibold text-xl text-gray-800 leading-tight px-1">
                 What I Do
             </h2>
         </template>

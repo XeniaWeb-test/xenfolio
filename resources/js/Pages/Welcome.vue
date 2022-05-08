@@ -15,8 +15,8 @@ defineProps({
     <Head title="Welcome"/>
     <div class="relative min-h-screen bg-gray-100 dark:bg-gray-900  sm:pt-0 bg-hero-bg ">
         <div class="container mx-auto">
-            <nav class="relative flex justify-between py-4 px-[5%]">
-                <div class="shrink-0 flex items-center px-0 xl:px-5 py-2">
+            <nav class="relative flex justify-between py-4 px-[5%] flex-wrap">
+                <div class="shrink-0 flex items-center px-0 xl:px-5 pb-4 pt-2 sm:py-2 ">
                     <Link href="/">
                         <!--                <Link :href="route('works.index')">-->
                         <AppLogoXeniaWeb color-web="#000" color-xenia="burlywood" class="w-45 h-20"/>
