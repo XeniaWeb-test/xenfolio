@@ -7,8 +7,14 @@ mix.js('resources/js/ssr.js', 'public/js')
         useVueStyleLoader: true,
         options: { optimizeSSR: true },
     })
+    .postCss('resources/css/app.css', 'public/css', [
+        require('postcss-import'),
+        require('tailwindcss'),
+        require('autoprefixer'),
+    ])
     .alias({
         '@': 'resources/js',
+        '@@': 'resources/assets/images',
         ziggy: 'vendor/tightenco/ziggy/dist/index',
     })
     .webpackConfig({

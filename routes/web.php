@@ -24,6 +24,10 @@ Route::get('/', function () {
     ]);
 });
 
+Route::resource('/web-works', App\Http\Controllers\WebWorkController::class);
+Route::inertia('/about', 'About');
+Route::inertia('/contacts', 'Contacts');
+
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
