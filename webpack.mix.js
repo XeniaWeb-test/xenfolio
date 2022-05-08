@@ -20,7 +20,10 @@ mix.js('resources/js/app.js', 'public/js')
     ])
     .alias({
         '@': 'resources/js',
-    });
+        '@@': 'resources/assets/images',
+    })
+    .sourceMaps()
+    .version();
 
 if (mix.inProduction()) {
     mix.version();
